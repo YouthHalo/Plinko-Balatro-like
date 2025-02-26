@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://4eapu73c6166"]
+
+[ext_resource type="Script" path="res://scripts/peg.gd" id="1_dnpkq"]
+[ext_resource type="Script" path="res://scripts/gravity_visualizer.gd" id="3_h3w37"]
+[ext_resource type="Texture2D" uid="uid://c0k8y44xei4qu" path="res://assets/textures/circle128.png" id="3_kwyfc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ya4i4"]
+radius = 5.0
+
+[node name="Peg" type="StaticBody2D"]
+script = ExtResource("1_dnpkq")
+
+[node name="Gravity Visualizer" type="Node2D" parent="."]
+z_index = -1
+script = ExtResource("3_h3w37")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ya4i4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-4.76837e-07, 4.76837e-07)
+scale = Vector2(0.078125, 0.078125)
+texture = ExtResource("3_kwyfc")

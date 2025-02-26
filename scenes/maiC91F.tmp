@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqmneqwjhmsf7"]
+
+[ext_resource type="Script" path="res://scripts/main_game.gd" id="1_d1m02"]
+[ext_resource type="PackedScene" uid="uid://slms4vuy3oim" path="res://scenes/ball.tscn" id="2_njxkd"]
+[ext_resource type="Script" path="res://scripts/plinko_peg_maker.gd" id="3_sni5n"]
+
+[node name="Main Game" type="Node2D"]
+script = ExtResource("1_d1m02")
+
+[node name="Ball" parent="." instance=ExtResource("2_njxkd")]
+position = Vector2(150, 43)
+
+[node name="Plinko Peg Maker" type="Node2D" parent="."]
+script = ExtResource("3_sni5n")
