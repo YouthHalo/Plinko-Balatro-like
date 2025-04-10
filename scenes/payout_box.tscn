@@ -1,8 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://bsma8uu1oky3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pw8ko"]
+size = Vector2(30, 30)
 
 [node name="Payout Box" type="StaticBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pw8ko")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(1.90735e-06, -1.78814e-06)
+scale = Vector2(30, 13.7615)

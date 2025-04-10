@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://4eapu73c6166"]
 
-[ext_resource type="Script" path="res://scripts/peg.gd" id="1_dnpkq"]
-[ext_resource type="Script" path="res://scripts/gravity_visualizer.gd" id="3_h3w37"]
+[ext_resource type="Script" uid="uid://cvvmypk6oruuv" path="res://scripts/peg.gd" id="1_dnpkq"]
+[ext_resource type="Script" uid="uid://dqv8hu76jwh6b" path="res://scripts/gravity_visualizer.gd" id="3_h3w37"]
 [ext_resource type="Texture2D" uid="uid://c0k8y44xei4qu" path="res://assets/textures/circle128.png" id="3_kwyfc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ya4i4"]

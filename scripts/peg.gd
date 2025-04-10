@@ -9,7 +9,7 @@ var gravity_direction: int = 0  # 0 = neutral, 1 = attract, -1 = repel
 
 func _ready():
 	sprite.modulate = Color(0.5, 0.5, 0.5) #Grey
-	#apply_gravity()
+	apply_gravity()
 	pass
 
 func apply_gravity() -> void:
